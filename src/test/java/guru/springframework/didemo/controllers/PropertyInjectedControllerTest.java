@@ -18,6 +18,6 @@ public class PropertyInjectedControllerTest {
 
     @Test
     public void testGreeting() throws Exception {
-        assertEquals(GreetingServiceImpl.HELLO_GURUS, propertyInjectedController.sayHallo());
+        assertEquals(GreetingServiceImpl.HELLO_GURUS, propertyInjectedController.sayHello());
     }
 }
