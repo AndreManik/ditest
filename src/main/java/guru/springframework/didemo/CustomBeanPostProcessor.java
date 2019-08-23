@@ -10,8 +10,8 @@ public class CustomBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
 
-        if (bean instanceof  LifeCycleDemoBean){
-            ((LifeCycleDemoBean)bean).beforeInit();
+        if (bean instanceof LifeCycleDemoBean) {
+            ((LifeCycleDemoBean) bean).beforeInit();
         }
 
         return bean;
@@ -19,8 +19,8 @@ public class CustomBeanPostProcessor implements BeanPostProcessor {
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        if (bean instanceof  LifeCycleDemoBean){
-            ((LifeCycleDemoBean)bean).afterInit();
+        if (bean instanceof LifeCycleDemoBean) {
+            ((LifeCycleDemoBean) bean).afterInit();
         }
 
         return bean;

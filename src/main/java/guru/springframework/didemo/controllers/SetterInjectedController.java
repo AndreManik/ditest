@@ -12,6 +12,7 @@ public class SetterInjectedController {
     public String sayHello() {
         return greetingService.sayGreeting();
     }
+
     @Autowired
     @Qualifier("setterGreetingService")
     public void setGreetingService(GreetingService greetingService) {
