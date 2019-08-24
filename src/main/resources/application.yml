@@ -1,0 +1,5 @@
+guru:
+  jms:
+    username: "JMS YML User"
+    password: "JMS YML Pass"
+    dburl: "JMS YML URL"
